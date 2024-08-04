@@ -92,6 +92,6 @@ const BlockSchema = new mongoose.Schema({
 });
 
 // Create the model from the schema
-const Block = mongoose.model('Block', BlockSchema);
+const Block = mongoose.models.Block || mongoose.model('Block', BlockSchema);
 
 export default Block;

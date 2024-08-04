@@ -1,7 +1,6 @@
 {
   "name": "eui-management-dashboard",
   "version": "1.0.0",
-  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,6 +10,8 @@
   },
   "dependencies": {
     "apexcharts": "^3.45.2",
+    "axios": "^1.7.3",
+    "dotenv": "^16.4.5",
     "flatpickr": "^4.6.13",
     "jsvectormap": "^1.6.0",
     "mongoose": "^8.5.2",

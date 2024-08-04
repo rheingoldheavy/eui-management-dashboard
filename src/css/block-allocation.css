@@ -1,0 +1,30 @@
+
+/* Add this CSS to your global styles or a relevant CSS module */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Allow horizontal scroll if content overflows */
+  }
+  
+  .table-header,
+  .table-row {
+    display: grid;
+    grid-template-columns: repeat(8, minmax(100px, auto)); /* Adjust column widths dynamically */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table-header {
+    font-weight: bold;
+    background-color: #f4f4f4; /* Light background for header */
+  }
+  
+  .table-cell {
+    padding: 8px;
+    border-right: 1px solid #ddd;
+    white-space: nowrap; /* Prevent text from wrapping */
+  }
+  
+  .table-cell:last-child {
+    border-right: none; /* Remove right border from last cell */
+  }
+  
