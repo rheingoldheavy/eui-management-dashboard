@@ -241,3 +241,45 @@ input[type="search"]::-webkit-search-cancel-button {
 [x-cloak] {
     display: none !important;
 }
+
+/* DJH ADDITIONAL CSS */
+
+.font-mono {
+    font-family: 'Noto Sans Mono', monospace;
+  }
+  
+  .table-container {
+    display: grid;
+    grid-template-columns: repeat(8, min-content); /* Each column is only as wide as its content */
+    gap: 1rem; /* Adjust gap as needed */
+    overflow-x: auto; /* Allow horizontal scroll if necessary */
+  }
+  
+  .table-header, .table-row {
+    display: contents; /* Allows for better column alignment */
+  }
+  
+  .table-cell {
+    display: flex;
+    align-items: center;
+    text-align: left; /* Ensure text aligns left, or adjust as needed */
+    padding: 0.5rem; /* Adjust padding to reduce extra space */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Show ellipsis for overflowing text */
+  }
+  
+  .table-header {
+    font-weight: bold;
+    border-bottom: 2px solid #ccc; /* Optional: Add border to header */
+  }
+
+  .table-header .table-cell {
+    font-weight: bold; /* Make header text bold */
+    font-size: large; /* Larger font size for the header */
+    border-bottom: 2px solid #ccc; /* Optional: Add border to header */
+  }
+  
+  .table-row .table-cell {
+    font-size: small; /* Smaller font size for data rows */
+  }
