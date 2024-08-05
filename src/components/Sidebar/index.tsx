@@ -70,6 +70,11 @@ const menuGroups = [
         label: "Block Allocation",
         route: "/block-allocation",
       },
+      {
+        icon: <FontAwesomeIcon icon={faList} />,
+        label: "Assign DEVEUI",
+        route: "/add-assignment",
+      },
     ],
   },
   {
